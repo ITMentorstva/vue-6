@@ -1,16 +1,20 @@
 <template>
 
-  <ProductsPage />
+  <Navigation />
+  <router-view></router-view>
+  <Footer />
 
 </template>
 
 <script>
 
-import ProductsPage from "@/components/Products/Page.vue";
+
+import Navigation from "@/components/Partials/navigation.vue";
+import Footer from "@/components/Partials/footer.vue";
 
 export default {
   name: 'App',
-  components: {ProductsPage},
+  components: {Footer, Navigation},
   provide() {
     return {
       productList: this.productList
