@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <ProductsPage />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import ProductsPage from "@/components/Products/Page.vue";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {ProductsPage},
+  provide() {
+    return {
+      productList: this.productList
+    }
+  },
+  data: () => ({
+    productList: [
+      {
+        "name": "HTML Course",
+        "price": 150,
+        "length": "3 months",
+        "discount": null
+      },
+      {
+        "name": "JavaScript Course",
+        "price": 200,
+        "length": "4 months",
+        "discount": 50
+      },
+      {
+        "name": "Python Bootcamp",
+        "price": 300,
+        "length": "6 months",
+        "discount": null
+      },
+      {
+        "name": "Web Design Masterclass",
+        "price": 180,
+        "length": "3.5 months",
+        "discount": 50
+      },
+      {
+        "name": "ReactJS Training",
+        "price": 250,
+        "length": "5 months",
+        "discount": null
+      }
+    ]
+  })
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
