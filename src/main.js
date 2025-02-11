@@ -13,8 +13,6 @@ const router = createRouter({
     ]
 });
 
-// 404 -> Nismo uspeli da pronadjemo ovu stranicu
-
 
 createApp(App)
     .use(router)

@@ -4,6 +4,8 @@
   <router-view></router-view>
   <Footer />
 
+  <nav>Test 123</nav>
+
 </template>
 
 <script>
@@ -56,3 +58,5 @@ export default {
   })
 }
 </script>
+
+<style src="./assets/css/main.css"></style>

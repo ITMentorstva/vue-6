@@ -10,3 +10,5 @@
     name: 'Navigation'
   }
 </script>
+
+<style scoped src="@/assets/css/partials/navigation.css"></style>
