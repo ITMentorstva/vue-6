@@ -4,8 +4,6 @@
   <router-view></router-view>
   <Footer />
 
-  <nav>Test 123</nav>
-
 </template>
 
 <script>
