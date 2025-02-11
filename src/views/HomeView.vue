@@ -1,17 +1,16 @@
 
 <template>
-  <DiscountedProducts />
-  <ProductDetails />
+  <ListProducts type="discounted"></ListProducts>
+  <ListProducts type="not_discounted"></ListProducts>
 </template>
 
 <script>
 
-import DiscountedProducts from "@/components/Products/Discounted.vue";
-import ProductDetails from "@/components/Products/Details.vue";
+import ListProducts from "@/components/Products/ListProducts.vue";
 
 export default {
   name: 'HomeView',
-  components: {ProductDetails, DiscountedProducts}
+  components: {ListProducts}
 }
 
 </script>

@@ -2,6 +2,7 @@
 <template>
   <nav>
     <router-link :to="{name: 'Home'}">Homepage</router-link>
+    <router-link :to="{name: 'Products'}">Products</router-link>
   </nav>
 </template>
 
