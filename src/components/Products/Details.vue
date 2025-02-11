@@ -1,6 +1,6 @@
 
 <template>
-  <div v-for="product in notDiscountedProducts" :key="product.id">
+  <div class="product-container" v-for="product in notDiscountedProducts" :key="product.id">
     <ProductInfo :product="product" />
   </div>
 </template>
@@ -21,3 +21,5 @@ export default {
 }
 
 </script>
+
+<style src="@/assets/css/partials/productDetails.css"></style>
